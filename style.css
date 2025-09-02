@@ -1,0 +1,104 @@
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+header h1 {
+    /* استخدام اللون الجديد هنا */
+    color: #c31432;
+    font-size: 2.5rem;
+    text-shadow: 0 0 8px rgba(195, 20, 50, 0.5); /* إضافة توهج خفيف */
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #B0B0B0;
+}
+
+.generator-box {
+    background-color: #1E1E1E;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    background-color: #252525;
+    border: 1px solid #444; /* تعديل لون الحدود */
+    border-radius: 8px;
+    color: #E0E0E0;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Cairo', sans-serif;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+    /* استخدام اللون الجديد عند التركيز */
+    border-color: #c31432;
+}
+
+button {
+    /* استخدام اللون الجديد للزر */
+    background-color: #c31432;
+    color: #FFFFFF; /* تغيير لون النص إلى الأبيض للتباين */
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    /* درجة أغمق قليلاً عند التمرير */
+    background-color: #a11029;
+}
+
+.image-container {
+    margin-top: 2rem;
+    min-height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.spinner {
+    border: 5px solid #333;
+    /* استخدام اللون الجديد لمؤشر التحميل */
+    border-top: 5px solid #c31432;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
