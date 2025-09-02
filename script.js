@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadingSpinner = document.getElementById('loading-spinner');
 
     // هام: سنستبدل هذا الرابط لاحقاً بالرابط الفعلي للـ Backend على Render
-    const BACKEND_URL = 'YOUR_BACKEND_URL_WILL_GO_HERE'; 
+    const BACKEND_URL = 'https://dalle-back.onrender.com'; 
 
     generateBtn.addEventListener('click', async () => {
         const prompt = promptInput.value;
